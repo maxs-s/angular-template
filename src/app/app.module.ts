@@ -1,13 +1,27 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule  } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser';
 import { MainLayoutComponent } from './layouts/main-layout.component';
 import { AppComponent } from './app.component';
 import { routing } from './app.routing';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {
+  MatButtonModule,
+  MatMenuModule,
+  MatToolbarModule,
+  MatIconModule,
+  MatCardModule
+} from '@angular/material';
 
 @NgModule({
   imports: [
     BrowserModule,
-    routing
+    routing,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatMenuModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatCardModule
   ],
   declarations: [
     AppComponent,
@@ -15,4 +29,4 @@ import { routing } from './app.routing';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

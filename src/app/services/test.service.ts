@@ -7,6 +7,6 @@ export class TestService {
     constructor(private http: BaseHttpService) { }
 
     getFoods() {
-        return this.http.get('supports/faq');
+        return this.http.get('dictionaries/industry-types');
     }
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TestService } from '../../../services/test.service';
+import { BaseDictionary } from './../../../models/base-dictionary';
 
 @Component({
   templateUrl: './dashboard.component.html'
